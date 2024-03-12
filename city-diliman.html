@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Design Thinking Summit 2024: Diliman City</title>
+        <link rel="stylesheet" href="style-city.css">
+        <link rel="stylesheet" href="style-position.css">
+    </head>
+    <body>
+        <div id="city-map">
+
+        </div>
+    </body>
+    <script src="script-city.js"></script>
+    <script>
+        
+        const cityURL = {
+            Affordable: "diliman-Affordable.html",
+            ClimateChange: "diliman-ClimateChange.html",
+            GoodHealth: "diliman-GoodHealth.html",
+            Industry: "diliman-Industry.html",
+            NoPoverty: "diliman-NoPoverty.html",
+            QualityEducation: "diliman-QualityEducation.html",
+            Sustain: "diliman-Sustain.html",
+            ZeroHunger: "diliman-ZeroHunger.html",
+            AnotherCity: "city-tech.html"
+        }
+
+        addAsset("Affordable and Clean Energy", "affordable", pins.Affordable, cityURL.Affordable, bldg.Affordable);
+        addAsset("Climate Change Action", "climate", pins.ClimateChange, cityURL.ClimateChange, bldg.ClimateChange);
+        addAsset("Good Health and Well-being", "health", pins.GoodHealth, cityURL.GoodHealth, bldg.GoodHealth);
+        addAsset("Industry Innovation and Infrastructure", "industry", pins.Industry, cityURL.Industry, bldg.Industry);
+        addAsset("No Poverty", "poverty", pins.NoPoverty, cityURL.NoPoverty, bldg.NoPoverty);
+        addAsset("Quality Education", "education", pins.QualityEducation, cityURL.QualityEducation, bldg.QualityEducation);
+        addAsset("Sustainable Cities and Communities", "sustain", pins.Sustain, cityURL.Sustain, bldg.Sustain);
+        addAsset("Zero Hunger", "hunger", pins.ZeroHunger, cityURL.ZeroHunger, bldg.ZeroHunger);
+        addAsset("Tech City", "city", pins.tech, cityURL.AnotherCity, bldg.AnotherCity);
+    </script>
+</html>

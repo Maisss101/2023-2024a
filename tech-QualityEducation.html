@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Thinking Summit 2024</title>
+    <link rel= "stylesheet" href = "sdg.css" type = "text/css">
+    <script src="script-favicon.js"></script>
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <h1 style = "color:rgb(173, 47, 52)">Quality Education Prototype Collection</h1>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script> <!-- Local Script -->
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("TAMBIS | StudyBoost Infomercial", "https://www.youtube.com/watch?v=OAW2PHfHt7E");
+      newVideo("EDUGAMER INFOMERCIAL VIDEO | CHAOTIC CRIMSONS", "https://www.youtube.com/watch?v=3K_PD7OnjUg");
+      newVideo("Educare | AcaMentalis Week Infomercial", "https://youtu.be/dPz9gvHDbus?si=Od8O354yfXH31BDc");
+      newVideo("Infomercial-StudySync", "https://www.youtube.com/watch?v=1GMp8nCets8");
+      newVideo("Infomercial - 'Artificial Intelligence in Education' by Group 1 in Design Thinking", "https://www.youtube.com/watch?v=bXrSB3aIejg");
+      newVideo("Readiverse infomercial Gubisoft 1", "https://www.youtube.com/watch?v=Bz9YElQnEgY");
+      newVideo("50-50 Infomercial | TAM.AI | TN21 | Group1-50/50", "https://www.youtube.com/watch?v=N722etHpu2g");
+
+      applyHover();
+    }
+  </script>
+</html>

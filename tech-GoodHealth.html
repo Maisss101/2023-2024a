@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Thinking Summit 2024</title>
+    <link rel= "stylesheet" href = "sdg.css" type = "text/css">
+    <script src="script-favicon.js"></script>
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <h1 style = "color:rgb(40, 155, 72)">Good Health and Well-being Prototype Collection</h1>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script> <!-- Local Script -->
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("V of Spades Kusina Infomercial", "https://www.youtube.com/watch?v=SjE0PZdKaGs");
+      newVideo("OCULI Infomercial - NeuroVine", "https://www.youtube.com/watch?v=B4EYPMESdwU");
+      newVideo("Prismatic Pink - SafeSteps infomercial", "https://www.youtube.com/watch?v=yEYl52OY9wE");
+      newVideo("INFOMERCIAL - PLUMP PEACH", "https://www.youtube.com/watch?v=XZriL6fb0Xo");
+      newVideo("DE STRESS INFOMERCIAL", "https://www.youtube.com/watch?v=oktZMOzi8G4");
+      newVideo("The Officials - Gym Finder", "https://www.youtube.com/watch?v=7chJLGONcCo");
+      newVideo("ABRA - INFOMERCIAL", "https://www.youtube.com/watch?v=RGVrqI7Gv30");
+      newVideo("IBEX", "https://www.youtube.com/watch?v=ZYcXPPOIFPg");
+      newVideo("CALORATE", "https://www.youtube.com/watch?v=hBV7yDtk1mY");
+      newVideo("365 Emergency Hotline", "https://www.youtube.com/watch?v=dEKzIJvGQCk");
+      newVideo("HealthiCore Infomercial", "https://www.youtube.com/watch?v=Yw3nfRAkS1Y");
+      newVideo("TN23 Tres Perro MediScene Infomercial", "https://www.youtube.com/watch?v=-xeqtXcliPs");
+      newVideo("TN21 NOMIS GENG INFORMERCIAL", "https://www.youtube.com/watch?v=Gapehi1Ph_M");
+      newVideo("Mindfulconnect | TN-21_BAJAJA", "https://www.youtube.com/watch?v=bKyzoqEzZX0");
+      newVideo("Teambol Design Thinking Infomercial", "https://www.youtube.com/watch?v=KVDdaYk_sBE");
+
+      applyHover();
+    }
+  </script>
+</html>

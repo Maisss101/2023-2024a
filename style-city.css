@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --green: #5a791a;
+    --mustard: #fbdb37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #58ab99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    min-width: 1280px;
+    min-height: 1024px;
+}
+
+#city-map {
+    background: url(img/city-map.jpg);
+    width: 1280px;
+    height: 1024px;
+    position: relative;
+}
+
+#city-map > div {
+    position: absolute;
+}
+
+#city-map > div * {
+    cursor: pointer;
+}
+
+#city-map img {
+    position: relative;
+    width: 100%;
+}
+
+#city-map .pin {
+    opacity: 100;
+    width: 50px;
+    height: 69.3px;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, 0%);
+    transition-duration: 0.3s;
+}
+
+#city-map .txt {
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mustard);
+    border: 5px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
+    font-family: "Bebas Neue", cursive;
+    font-weight: 800;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding: 5px 5px;
+    width: 0;
+    height: 41.6px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, 0%);
+}
+
+#affordable .txt {
+    font-size: 24px;
+    line-height: 0.9;
+}
+
+#climate .txt {
+    font-size: 28px;
+}
+
+#health .txt {
+    font-size: 24px;
+    line-height: 0.9;
+}
+
+#industry .txt {
+    font-size: 18px;
+}
+
+#sustain .txt {
+    font-size: 18px;
+}
+
+#city-map > div:hover {
+    transform: scale(105%);
+    z-index: 1000;
+}
+
+#city-map > div:hover .pin {
+    opacity: 0;
+    top: 10%;
+}
+
+#city-map > div:hover .txt {
+    opacity: 100;
+    width: 264px;
+}

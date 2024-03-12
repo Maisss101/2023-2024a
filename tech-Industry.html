@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design Thinking Summit 2024</title>
+    <link rel= "stylesheet" href = "sdg.css" type = "text/css">
+    <script src="script-favicon.js"></script>
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <div id="banner-header">
+      <img src="img/banner-header-mobil.png">
+    </div>
+    <section class = "container">
+      <!-- Page Title -->
+      <h1 style = "color:rgb(243, 109, 36)">Industry, Innovation and Infrastracture Prototype Collection</h1>
+      <!-- List of Video -->
+      <div id= "video-container"></div>
+    </section>
+  </body>
+
+  <script src = "https://www.youtube.com/iframe_api"></script> <!-- Youtube Iframe API -->
+  <script src = "script.js"></script> <!-- Local Script -->
+  <script>
+    // YT API automatically calls this function
+    function onYouTubeIframeAPIReady(){
+      // Adding Videos
+      // newVideo([Project by Group], [Youtube URL]);
+
+      // Deleting Videos
+      // Just remove the line
+      newVideo("INFOMERCIAL: COMMUTER HUB", "https://www.youtube.com/watch?v=PxjMsg4O4nk");
+      newVideo("TW22 Valerio's Angels Infomercial - Design Thinking (CCS0101)", "https://www.youtube.com/watch?v=WTJMOejBYlM");
+      newVideo("CODEX Infomercial", "https://www.youtube.com/watch?v=cuzTnYWjsFk");
+      newVideo("The Finals - Infomercial", "https://www.youtube.com/watch?v=hT5i6JQNNNQ");
+      newVideo("Infomerical Air Tags for Android", "https://www.youtube.com/watch?v=eY4kWpq8OYQ");
+      newVideo("AquaJeep Informercial - DXT", "https://www.youtube.com/watch?v=LMfAfG6I9Cs");
+      newVideo("RoadReport- TN23: Infomercial", "https://www.youtube.com/watch?v=QIimIDNKiXI");
+      newVideo("EYEASSIST", "https://www.youtube.com/watch?v=BW06Mpa42XE");
+
+
+
+      applyHover();
+    }
+  </script>
+</html>
